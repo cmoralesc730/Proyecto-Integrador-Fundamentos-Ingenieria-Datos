@@ -10,7 +10,7 @@ except ImportError:
 
 # Rutas relativas al raíz del proyecto (<root>/src/streaming/poll_binance_http.py)
 ROOT_DIR = Path(__file__).resolve().parents[2]   # streaming/ -> src/ -> root
-OUT_DIR = ROOT_DIR / "data"
+OUT_DIR = ROOT_DIR / "data" / "raw"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Parámetros (override por variables de entorno)
